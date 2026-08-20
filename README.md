@@ -1,6 +1,6 @@
 # KISANSETU
 
-**KISANSETU v6 — Final Hackathon Build**
+**KISANSETU v6**
 
 A fully connected agricultural procurement and contract platform — buyers, sellers/farmers, FPOs, quality
 officers, and management, all working off one real SQL database, with a real backend enforcing every
@@ -448,7 +448,7 @@ doesn't include, rather than leaving it ambiguous.
 
 ## 14. Project Status
 
-**KISANSETU v6 — Final Hackathon Build**
+**KISANSETU v6**
 
 Verified immediately before packaging: backend health check, all 8 backend tests, a full seed run from a
 clean database, all 5 primary demo account logins, live product visibility (117 products across 39
