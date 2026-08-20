@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgbrinjal" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjbrinjal" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#7A5580"/>
+      <stop offset="100%" stop-color="#4A2B52"/>
+    </radialGradient>
+    <filter id="shadowbrinjal" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softbrinjal"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgbrinjal)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softbrinjal)"/>
+  <g filter="url(#shadowbrinjal)"><circle cx="200" cy="200" r="68.0" fill="url(#subjbrinjal)"/><ellipse cx="176.2" cy="172.8" rx="28.56" ry="20.4" fill="white" opacity="0.32" transform="rotate(-20 176.2 172.8)"/><circle cx="270" cy="215" r="55.76" fill="url(#subjbrinjal)"/><ellipse cx="250.484" cy="192.696" rx="23.4192" ry="16.727999999999998" fill="white" opacity="0.32" transform="rotate(-20 250.484 192.696)"/><path d="M200 118.4 C210.88 126.9 210.88 143.9 200 152.4 C189.12 143.9 189.12 126.9 200 118.4 Z" fill="#5B8C4A" transform="rotate(0 200 135.4)"/><path d="M200 118.4 C210.88 126.9 210.88 143.9 200 152.4 C189.12 143.9 189.12 126.9 200 118.4 Z" fill="#5B8C4A" transform="rotate(72 200 135.4)"/><path d="M200 118.4 C210.88 126.9 210.88 143.9 200 152.4 C189.12 143.9 189.12 126.9 200 118.4 Z" fill="#5B8C4A" transform="rotate(144 200 135.4)"/><path d="M200 118.4 C210.88 126.9 210.88 143.9 200 152.4 C189.12 143.9 189.12 126.9 200 118.4 Z" fill="#5B8C4A" transform="rotate(216 200 135.4)"/><path d="M200 118.4 C210.88 126.9 210.88 143.9 200 152.4 C189.12 143.9 189.12 126.9 200 118.4 Z" fill="#5B8C4A" transform="rotate(288 200 135.4)"/></g>
+</svg>

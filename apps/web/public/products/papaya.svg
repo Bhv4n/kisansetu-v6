@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgpapaya" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjpapaya" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#F5C878"/>
+      <stop offset="100%" stop-color="#E9A23D"/>
+    </radialGradient>
+    <filter id="shadowpapaya" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softpapaya"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgpapaya)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softpapaya)"/>
+  <g filter="url(#shadowpapaya)"><path d="M200 110 C260 118 268 220 220 280 C205 296 195 296 180 280 C132 220 140 118 200 110 Z" fill="url(#subjpapaya)"/><ellipse cx="175" cy="165" rx="28" ry="55" fill="white" opacity="0.32" transform="rotate(-10 175 165)"/><path d="M198 108 q4 -10 12 -8" stroke="#5B8C4A" stroke-width="5" fill="none" stroke-linecap="round"/></g>
+</svg>

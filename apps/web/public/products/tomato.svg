@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgtomato" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjtomato" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#E36A56"/>
+      <stop offset="100%" stop-color="#C9382D"/>
+    </radialGradient>
+    <filter id="shadowtomato" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softtomato"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgtomato)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softtomato)"/>
+  <g filter="url(#shadowtomato)"><circle cx="200" cy="200" r="74.0" fill="url(#subjtomato)"/><ellipse cx="174.1" cy="170.4" rx="31.08" ry="22.2" fill="white" opacity="0.32" transform="rotate(-20 174.1 170.4)"/><circle cx="270" cy="215" r="60.68" fill="url(#subjtomato)"/><ellipse cx="248.762" cy="190.728" rx="25.485599999999998" ry="18.204" fill="white" opacity="0.32" transform="rotate(-20 248.762 190.728)"/><path d="M200 111.19999999999999 C211.84 120.44999999999999 211.84 138.95 200 148.2 C188.16 138.95 188.16 120.44999999999999 200 111.19999999999999 Z" fill="#5B8C4A" transform="rotate(0 200 129.7)"/><path d="M200 111.19999999999999 C211.84 120.44999999999999 211.84 138.95 200 148.2 C188.16 138.95 188.16 120.44999999999999 200 111.19999999999999 Z" fill="#5B8C4A" transform="rotate(72 200 129.7)"/><path d="M200 111.19999999999999 C211.84 120.44999999999999 211.84 138.95 200 148.2 C188.16 138.95 188.16 120.44999999999999 200 111.19999999999999 Z" fill="#5B8C4A" transform="rotate(144 200 129.7)"/><path d="M200 111.19999999999999 C211.84 120.44999999999999 211.84 138.95 200 148.2 C188.16 138.95 188.16 120.44999999999999 200 111.19999999999999 Z" fill="#5B8C4A" transform="rotate(216 200 129.7)"/><path d="M200 111.19999999999999 C211.84 120.44999999999999 211.84 138.95 200 148.2 C188.16 138.95 188.16 120.44999999999999 200 111.19999999999999 Z" fill="#5B8C4A" transform="rotate(288 200 129.7)"/></g>
+</svg>

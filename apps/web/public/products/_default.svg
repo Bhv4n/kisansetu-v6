@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgdefault" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjdefault" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#8FB86C"/>
+      <stop offset="100%" stop-color="#7CA854"/>
+    </radialGradient>
+    <filter id="shadowdefault" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softdefault"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgdefault)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softdefault)"/>
+  <g filter="url(#shadowdefault)"><path d="M200 105.0 C265.0 147.5 265.0 232.5 200 275.0 C135.0 232.5 135.0 147.5 200 105.0 Z" fill="#7CA854" transform="rotate(0 200 190)"/><path d="M200 130.0 C245.0 160.0 245.0 220.0 200 250.0 C155.0 220.0 155.0 160.0 200 130.0 Z" fill="#8FB86C" transform="rotate(25 200 190)"/><ellipse cx="175" cy="150" rx="30" ry="40" fill="white" opacity="0.32" transform="rotate(-15 175 150)"/></g>
+</svg>

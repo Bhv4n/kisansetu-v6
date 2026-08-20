@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgcardamom" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjcardamom" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#A7C97F"/>
+      <stop offset="100%" stop-color="#7CA854"/>
+    </radialGradient>
+    <filter id="shadowcardamom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softcardamom"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgcardamom)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softcardamom)"/>
+  <g filter="url(#shadowcardamom)"><ellipse cx="173" cy="174" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(35 173 174)"/><ellipse cx="140" cy="215" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(-3 140 215)"/><ellipse cx="139" cy="169" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(-31 139 169)"/><ellipse cx="202" cy="193" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(6 202 193)"/><ellipse cx="221" cy="208" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(33 221 208)"/><ellipse cx="189" cy="180" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(-29 189 180)"/><ellipse cx="196" cy="224" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(30 196 224)"/><ellipse cx="216" cy="169" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(30 216 169)"/><ellipse cx="256" cy="186" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(14 256 186)"/><ellipse cx="272" cy="178" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(37 272 178)"/><ellipse cx="173" cy="202" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(-27 173 202)"/><ellipse cx="206" cy="208" rx="15" ry="26" fill="url(#subjcardamom)" transform="rotate(8 206 208)"/><ellipse cx="165" cy="180" rx="40" ry="26" fill="white" opacity="0.32" transform="rotate(-8 165 180)"/></g>
+</svg>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgguava" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjguava" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#E1E8B5"/>
+      <stop offset="100%" stop-color="#C9D18A"/>
+    </radialGradient>
+    <filter id="shadowguava" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softguava"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgguava)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softguava)"/>
+  <g filter="url(#shadowguava)"><circle cx="200" cy="200" r="74.0" fill="url(#subjguava)"/><ellipse cx="174.1" cy="170.4" rx="31.08" ry="22.2" fill="white" opacity="0.32" transform="rotate(-20 174.1 170.4)"/><circle cx="270" cy="215" r="60.68" fill="url(#subjguava)"/><ellipse cx="248.762" cy="190.728" rx="25.485599999999998" ry="18.204" fill="white" opacity="0.32" transform="rotate(-20 248.762 190.728)"/><path d="M194 127.48 q6 -18 16 -14" stroke="#5B8C4A" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+</svg>

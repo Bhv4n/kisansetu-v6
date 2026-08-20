@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgbeetroot" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjbeetroot" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#A34A5E"/>
+      <stop offset="100%" stop-color="#7A2038"/>
+    </radialGradient>
+    <filter id="shadowbeetroot" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softbeetroot"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgbeetroot)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softbeetroot)"/>
+  <g filter="url(#shadowbeetroot)"><path d="M200 130 C245.0 150 237.8 250 210.8 300 C195.5 316 204.5 316 200 300 C162.2 250 155.0 150 200 130 Z" fill="url(#subjbeetroot)"/><ellipse cx="183.8" cy="175" rx="19.8" ry="47.6" fill="white" opacity="0.32" transform="rotate(8 183.8 175)"/><path d="M186 95.0 C197.0 106.5 197.0 129.5 186 141.0 C175.0 129.5 175.0 106.5 186 95.0 Z" fill="#5B8C4A" transform="rotate(-18 186 118)"/><path d="M200 95.0 C211.0 106.5 211.0 129.5 200 141.0 C189.0 129.5 189.0 106.5 200 95.0 Z" fill="#5B8C4A" transform="rotate(0 200 118)"/><path d="M214 95.0 C225.0 106.5 225.0 129.5 214 141.0 C203.0 129.5 203.0 106.5 214 95.0 Z" fill="#5B8C4A" transform="rotate(18 214 118)"/><path d="M174 95.0 C185.0 106.5 185.0 129.5 174 141.0 C163.0 129.5 163.0 106.5 174 95.0 Z" fill="#5B8C4A" transform="rotate(-32 174 118)"/><path d="M226 95.0 C237.0 106.5 237.0 129.5 226 141.0 C215.0 129.5 215.0 106.5 226 95.0 Z" fill="#5B8C4A" transform="rotate(32 226 118)"/></g>
+</svg>

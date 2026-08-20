@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgcapsicum" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjcapsicum" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#82BE6E"/>
+      <stop offset="100%" stop-color="#5B9C4A"/>
+    </radialGradient>
+    <filter id="shadowcapsicum" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softcapsicum"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgcapsicum)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softcapsicum)"/>
+  <g filter="url(#shadowcapsicum)"><circle cx="200" cy="200" r="88.0" fill="url(#subjcapsicum)"/><ellipse cx="169.2" cy="164.8" rx="36.96" ry="26.4" fill="white" opacity="0.32" transform="rotate(-20 169.2 164.8)"/><path d="M200 94.4 C214.08 105.4 214.08 127.4 200 138.4 C185.92 127.4 185.92 105.4 200 94.4 Z" fill="#5B8C4A" transform="rotate(0 200 116.4)"/><path d="M200 94.4 C214.08 105.4 214.08 127.4 200 138.4 C185.92 127.4 185.92 105.4 200 94.4 Z" fill="#5B8C4A" transform="rotate(72 200 116.4)"/><path d="M200 94.4 C214.08 105.4 214.08 127.4 200 138.4 C185.92 127.4 185.92 105.4 200 94.4 Z" fill="#5B8C4A" transform="rotate(144 200 116.4)"/><path d="M200 94.4 C214.08 105.4 214.08 127.4 200 138.4 C185.92 127.4 185.92 105.4 200 94.4 Z" fill="#5B8C4A" transform="rotate(216 200 116.4)"/><path d="M200 94.4 C214.08 105.4 214.08 127.4 200 138.4 C185.92 127.4 185.92 105.4 200 94.4 Z" fill="#5B8C4A" transform="rotate(288 200 116.4)"/></g>
+</svg>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgbanana" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjbanana" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#F7DE84"/>
+      <stop offset="100%" stop-color="#EFC94C"/>
+    </radialGradient>
+    <filter id="shadowbanana" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softbanana"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgbanana)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softbanana)"/>
+  <g filter="url(#shadowbanana)"><path d="M146 260 Q100 170 152 110 Q190 170 170 260 Z" fill="url(#subjbanana)" transform="rotate(-18 160 185)"/><path d="M176 260 Q134 170 182 110 Q220 170 200 260 Z" fill="url(#subjbanana)" transform="rotate(-4 190 185)"/><path d="M208 260 Q170 170 214 110 Q252 170 232 260 Z" fill="url(#subjbanana)" transform="rotate(10 222 185)"/><path d="M234 260 Q200 170 240 110 Q278 170 258 260 Z" fill="url(#subjbanana)" transform="rotate(24 248 185)"/><ellipse cx="205" cy="270" rx="20" ry="12" fill="#4B2E2B" opacity="0.5"/><ellipse cx="175" cy="160" rx="30" ry="60" fill="white" opacity="0.32" transform="rotate(-14 175 160)"/></g>
+</svg>

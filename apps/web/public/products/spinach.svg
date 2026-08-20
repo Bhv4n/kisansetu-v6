@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgspinach" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjspinach" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#5B9C4A"/>
+      <stop offset="100%" stop-color="#3F7A3A"/>
+    </radialGradient>
+    <filter id="shadowspinach" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softspinach"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgspinach)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softspinach)"/>
+  <g filter="url(#shadowspinach)"><path d="M200 268 Q136.31051152153876 283.17091670275573 92.40975298341627 249.02893658988788 Q145.34021676021914 231.96091354612093 200 268 Z" fill="#3F7A3A" opacity="0.95"/><line x1="200" y1="268" x2="92" y2="249" stroke="#5B9C4A" stroke-width="2" opacity="0.5"/><path d="M200 268 Q129.48508787116594 257.3104104983954 95.42743249302903 207.625 Q155.48508787116594 212.2770895016046 200 268 Z" fill="#3F7A3A" opacity="0.95"/><line x1="200" y1="268" x2="95" y2="208" stroke="#5B9C4A" stroke-width="2" opacity="0.5"/><path d="M200 268 Q141.45934398186662 238.68278237593844 129.77545364174557 184.30964458925166 Q181.2936550240535 205.2578266722384 200 268 Z" fill="#3F7A3A" opacity="0.95"/><line x1="200" y1="268" x2="130" y2="184" stroke="#5B9C4A" stroke-width="2" opacity="0.5"/><path d="M200 268 Q152.8535790909504 214.48518754852321 158.7010676934255 154.53211604010156 Q201.71759537181765 196.70014009558847 200 268 Z" fill="#3F7A3A" opacity="0.95"/><line x1="200" y1="268" x2="159" y2="155" stroke="#5B9C4A" stroke-width="2" opacity="0.5"/><path d="M200 268 Q174.0 207.9125 200.0 158.75 Q226.0 207.9125 200 268 Z" fill="#3F7A3A" opacity="0.95"/><line x1="200" y1="268" x2="200" y2="159" stroke="#5B9C4A" stroke-width="2" opacity="0.5"/><path d="M200 268 Q198.28240462818238 196.7001400955885 241.2989323065745 154.53211604010158 Q247.14642090904962 214.48518754852324 200 268 Z" fill="#3F7A3A" opacity="0.95"/><line x1="200" y1="268" x2="241" y2="155" stroke="#5B9C4A" stroke-width="2" opacity="0.5"/><path d="M200 268 Q218.7063449759465 205.2578266722384 270.22454635825443 184.30964458925166 Q258.54065601813335 238.68278237593844 200 268 Z" fill="#3F7A3A" opacity="0.95"/><line x1="200" y1="268" x2="270" y2="184" stroke="#5B9C4A" stroke-width="2" opacity="0.5"/><path d="M200 268 Q244.51491212883406 212.2770895016046 304.572567506971 207.625 Q270.51491212883406 257.3104104983954 200 268 Z" fill="#3F7A3A" opacity="0.95"/><line x1="200" y1="268" x2="305" y2="208" stroke="#5B9C4A" stroke-width="2" opacity="0.5"/><path d="M200 268 Q254.65978323978086 231.96091354612093 307.5902470165837 249.02893658988785 Q263.68948847846127 283.17091670275573 200 268 Z" fill="#3F7A3A" opacity="0.95"/><line x1="200" y1="268" x2="308" y2="249" stroke="#5B9C4A" stroke-width="2" opacity="0.5"/><ellipse cx="200" cy="190" rx="46" ry="34" fill="white" opacity="0.32" transform="rotate(-8 200 190)"/></g>
+</svg>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgokra" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjokra" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#93C46E"/>
+      <stop offset="100%" stop-color="#6FA84A"/>
+    </radialGradient>
+    <filter id="shadowokra" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softokra"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgokra)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softokra)"/>
+  <g filter="url(#shadowokra)"><path d="M144 120 Q200 210 154 300 Q134 210 144 120 Z" fill="url(#subjokra)"/><path d="M146 150 Q180.0 158 150 166" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M146 180 Q180.0 188 150 196" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M146 210 Q180.0 218 150 226" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M146 240 Q180.0 248 150 256" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M146 270 Q180.0 278 150 286" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><ellipse cx="152" cy="122" rx="8" ry="10" fill="#5B8C4A"/><path d="M214 100 Q270 190 224 280 Q204 190 214 100 Z" fill="url(#subjokra)"/><path d="M216 130 Q250.0 138 220 146" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M216 160 Q250.0 168 220 176" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M216 190 Q250.0 198 220 206" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M216 220 Q250.0 228 220 236" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M216 250 Q250.0 258 220 266" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><ellipse cx="222" cy="102" rx="8" ry="10" fill="#5B8C4A"/><path d="M184 150 Q240 240 194 330 Q174 240 184 150 Z" fill="url(#subjokra)"/><path d="M186 180 Q220.0 188 190 196" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M186 210 Q220.0 218 190 226" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M186 240 Q220.0 248 190 256" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M186 270 Q220.0 278 190 286" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><path d="M186 300 Q220.0 308 190 316" stroke="#93C46E" stroke-width="2" fill="none" opacity="0.5"/><ellipse cx="192" cy="152" rx="8" ry="10" fill="#5B8C4A"/><ellipse cx="170" cy="150" rx="24" ry="60" fill="white" opacity="0.32" transform="rotate(-10 170 150)"/></g>
+</svg>

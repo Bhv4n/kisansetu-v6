@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgbottle-gourd" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjbottle-gourd" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#C8E0A5"/>
+      <stop offset="100%" stop-color="#A8C97C"/>
+    </radialGradient>
+    <filter id="shadowbottle-gourd" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softbottle-gourd"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgbottle-gourd)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softbottle-gourd)"/>
+  <g filter="url(#shadowbottle-gourd)"><path d="M144 120 Q200 210 154 300 Q134 210 144 120 Z" fill="url(#subjbottle-gourd)"/><ellipse cx="152" cy="122" rx="8" ry="10" fill="#5B8C4A"/><path d="M214 100 Q270 190 224 280 Q204 190 214 100 Z" fill="url(#subjbottle-gourd)"/><ellipse cx="222" cy="102" rx="8" ry="10" fill="#5B8C4A"/><ellipse cx="170" cy="150" rx="24" ry="60" fill="white" opacity="0.32" transform="rotate(-10 170 150)"/></g>
+</svg>

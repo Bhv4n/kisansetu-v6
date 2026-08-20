@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgalphonso-mango" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjalphonso-mango" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#F6C56A"/>
+      <stop offset="100%" stop-color="#E8A23A"/>
+    </radialGradient>
+    <filter id="shadowalphonso-mango" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softalphonso-mango"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgalphonso-mango)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softalphonso-mango)"/>
+  <g filter="url(#shadowalphonso-mango)"><circle cx="200" cy="200" r="78.0" fill="url(#subjalphonso-mango)"/><ellipse cx="219.5" cy="211.7" rx="42.900000000000006" ry="31.200000000000003" fill="#D9432C" opacity="0.35"/><ellipse cx="172.7" cy="168.8" rx="32.76" ry="23.4" fill="white" opacity="0.32" transform="rotate(-20 172.7 168.8)"/><circle cx="270" cy="215" r="63.959999999999994" fill="url(#subjalphonso-mango)"/><ellipse cx="285.99" cy="224.594" rx="35.178" ry="25.584" fill="#D9432C" opacity="0.35"/><ellipse cx="247.614" cy="189.416" rx="26.863199999999996" ry="19.188" fill="white" opacity="0.32" transform="rotate(-20 247.614 189.416)"/><path d="M194 123.56 q6 -18 16 -14" stroke="#5B8C4A" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+</svg>

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #FFF8F0;
+  color: #4B2E2B;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.badge {
+  @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium;
+}
+
+.card {
+  @apply bg-white rounded-xl2 shadow-card border border-tan-100 p-5;
+}
+
+.btn-primary {
+  @apply bg-tan-600 hover:bg-tan-700 text-white font-medium px-4 py-2 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-cream-200 text-cocoa-500 font-medium px-4 py-2 rounded-lg border border-tan-200 transition-colors disabled:opacity-50;
+}
+
+.btn-ghost {
+  @apply text-cocoa-500 hover:text-tan-700 font-medium transition-colors;
+}
+
+.input-field {
+  @apply w-full border border-tan-200 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-tan-500 focus:border-transparent text-cocoa-500;
+}
+
+.label-field {
+  @apply block text-sm font-medium text-cocoa-500 mb-1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #C08552;
+  border-radius: 4px;
+}

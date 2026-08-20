@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgginger" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjginger" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#EFE2BC"/>
+      <stop offset="100%" stop-color="#D9C48A"/>
+    </radialGradient>
+    <filter id="shadowginger" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softginger"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgginger)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softginger)"/>
+  <g filter="url(#shadowginger)"><path d="M130 210 C120 170 160 150 200 160 C240 150 280 175 270 215 C285 235 260 260 220 250 C200 265 180 262 165 248 C130 250 118 230 130 210 Z" fill="url(#subjginger)"/><circle cx="265.7784834550136" cy="223.81110788291178" r="26" fill="url(#subjginger)"/><circle cx="176.0585899672032" cy="256.68309414322493" r="26" fill="url(#subjginger)"/><circle cx="134.2215165449864" cy="186.18889211708822" r="26" fill="url(#subjginger)"/><circle cx="223.94141003279682" cy="153.31690585677504" r="26" fill="url(#subjginger)"/><ellipse cx="160" cy="175" rx="40" ry="26" fill="white" opacity="0.32" transform="rotate(-15 160 175)"/></g>
+</svg>

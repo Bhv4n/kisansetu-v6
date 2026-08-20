@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgsugarcane" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjsugarcane" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#D8E3A8"/>
+      <stop offset="100%" stop-color="#B8C77E"/>
+    </radialGradient>
+    <filter id="shadowsugarcane" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softsugarcane"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgsugarcane)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softsugarcane)"/>
+  <g filter="url(#shadowsugarcane)"><rect x="146" y="80" width="28" height="240" rx="14" fill="url(#subjsugarcane)"/><ellipse cx="160" cy="120" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="160" cy="160" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="160" cy="200" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="160" cy="240" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="160" cy="280" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><path d="M160 82 Q170 40 190 20" stroke="#8AA65C" stroke-width="8" fill="none" stroke-linecap="round"/><rect x="174" y="80" width="28" height="240" rx="14" fill="url(#subjsugarcane)"/><ellipse cx="188" cy="120" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="188" cy="160" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="188" cy="200" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="188" cy="240" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="188" cy="280" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><path d="M188 82 Q198 40 218 20" stroke="#8AA65C" stroke-width="8" fill="none" stroke-linecap="round"/><rect x="202" y="80" width="28" height="240" rx="14" fill="url(#subjsugarcane)"/><ellipse cx="216" cy="120" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="216" cy="160" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="216" cy="200" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="216" cy="240" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="216" cy="280" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><path d="M216 82 Q226 40 246 20" stroke="#8AA65C" stroke-width="8" fill="none" stroke-linecap="round"/><rect x="230" y="80" width="28" height="240" rx="14" fill="url(#subjsugarcane)"/><ellipse cx="244" cy="120" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="244" cy="160" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="244" cy="200" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="244" cy="240" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><ellipse cx="244" cy="280" rx="15" ry="5" fill="#4B2E2B" opacity="0.25"/><path d="M244 82 Q254 40 274 20" stroke="#8AA65C" stroke-width="8" fill="none" stroke-linecap="round"/><ellipse cx="180" cy="140" rx="22" ry="90" fill="white" opacity="0.32" transform="rotate(-4 180 140)"/></g>
+</svg>

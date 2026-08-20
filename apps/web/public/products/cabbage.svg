@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgcabbage" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjcabbage" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#B3D18E"/>
+      <stop offset="100%" stop-color="#8FB86C"/>
+    </radialGradient>
+    <filter id="shadowcabbage" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softcabbage"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgcabbage)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softcabbage)"/>
+  <g filter="url(#shadowcabbage)"><ellipse cx="265" cy="225" rx="36" ry="49" fill="#7CA854" transform="rotate(0 265 225)"/><ellipse cx="246" cy="251" rx="36" ry="49" fill="#7CA854" transform="rotate(45 246 251)"/><ellipse cx="200" cy="262" rx="36" ry="49" fill="#7CA854" transform="rotate(90 200 262)"/><ellipse cx="154" cy="251" rx="36" ry="49" fill="#7CA854" transform="rotate(135 154 251)"/><ellipse cx="135" cy="225" rx="36" ry="49" fill="#7CA854" transform="rotate(180 135 225)"/><ellipse cx="154" cy="199" rx="36" ry="49" fill="#7CA854" transform="rotate(225 154 199)"/><ellipse cx="200" cy="188" rx="36" ry="49" fill="#7CA854" transform="rotate(270 200 188)"/><ellipse cx="246" cy="199" rx="36" ry="49" fill="#7CA854" transform="rotate(315 246 199)"/><circle cx="200" cy="195" r="81.9" fill="url(#subjcabbage)"/><ellipse cx="175.43" cy="165.344" rx="27.846000000000004" ry="21.294" fill="white" opacity="0.32" transform="rotate(-20 175.43 165.344)"/></g>
+</svg>

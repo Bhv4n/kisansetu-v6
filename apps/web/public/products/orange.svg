@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgorange" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFDFB"/>
+      <stop offset="100%" stop-color="#EEDBC6"/>
+    </radialGradient>
+    <radialGradient id="subjorange" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#F5B45C"/>
+      <stop offset="100%" stop-color="#EA8C2E"/>
+    </radialGradient>
+    <filter id="shadoworange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softorange"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <circle cx="200" cy="196" r="188" fill="url(#bgorange)"/>
+  <circle cx="200" cy="196" r="187" fill="none" stroke="#CD9A6D" stroke-opacity="0.25" stroke-width="1.5"/>
+  <ellipse cx="200" cy="322" rx="108" ry="20" fill="#4B2E2B" opacity="0.16" filter="url(#softorange)"/>
+  <g filter="url(#shadoworange)"><circle cx="200" cy="200" r="76.0" fill="url(#subjorange)"/><ellipse cx="173.4" cy="169.6" rx="31.919999999999998" ry="22.8" fill="white" opacity="0.32" transform="rotate(-20 173.4 169.6)"/><circle cx="270" cy="215" r="62.31999999999999" fill="url(#subjorange)"/><ellipse cx="248.188" cy="190.072" rx="26.174399999999995" ry="18.695999999999998" fill="white" opacity="0.32" transform="rotate(-20 248.188 190.072)"/><path d="M194 125.52 q6 -18 16 -14" stroke="#5B8C4A" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+</svg>
